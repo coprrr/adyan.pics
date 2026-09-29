@@ -212,3 +212,46 @@ footer {
     display: block;
   }
 }
+
+.more-link {
+  margin-top: 18px;
+}
+
+.log-year {
+  margin-top: 54px;
+}
+
+.log-item {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 24px;
+  padding: 22px 0;
+  border-top: 1px solid var(--rule);
+}
+
+.log-item h3 {
+  margin: 0 0 6px;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.log-date {
+  color: var(--muted);
+}
+
+.log-photo-placeholder {
+  margin-top: 14px;
+  width: min(100%, 520px);
+  aspect-ratio: 16 / 10;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--rule);
+  color: var(--muted);
+}
+
+@media (max-width: 700px) {
+  .log-item {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+}

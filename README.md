@@ -8,6 +8,7 @@ A deliberately simple personal website built with plain HTML, CSS, and a tiny bi
 - `about.html` — about page
 - `photos.html` — photo archive
 - `projects.html` — projects page
+- `log.html` — personal/site timeline
 - `style.css` — shared styling
 - `script.js` — small site scripts
 - `images/` — put your photos here
