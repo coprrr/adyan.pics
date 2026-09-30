@@ -33,7 +33,7 @@ window.PHOTO_DATA = {
 
   cars: {
     torontoAutoshow: [
-      { src: "images/2026/autoshow/01.jpg", caption: "caption 1", alt: "Toronto AutoShow 2026 photo 1" },
+      { src: "images/2026/autoshow/01.jpg", caption: "hii my friends", alt: "Toronto AutoShow 2026 photo 1" },
       { src: "images/2026/autoshow/02.jpg", caption: "caption 2", alt: "Toronto AutoShow 2026 photo 2" },
       { src: "images/2026/autoshow/03.jpg", caption: "caption 3", alt: "Toronto AutoShow 2026 photo 3" },
       { src: "images/2026/autoshow/04.jpg", caption: "caption 4", alt: "Toronto AutoShow 2026 photo 4" },
