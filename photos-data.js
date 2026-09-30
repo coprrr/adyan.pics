@@ -14,7 +14,7 @@ window.PHOTO_DATA = {
     year: "2026",
     link: "photos/cars.html",
     preview: [
-      { src: "images/2026/autoshow/01.jpg", caption: "caption 1", alt: "Toronto AutoShow 2026 photo 1" },
+      { src: "images/2026/autoshow/01.jpg", caption: "hi kiyan", alt: "honda nsx" },
       { src: "images/2026/autoshow/02.jpg", caption: "caption 2", alt: "Toronto AutoShow 2026 photo 2" },
       { src: "images/2026/autoshow/03.jpg", caption: "caption 3", alt: "Toronto AutoShow 2026 photo 3" }
     ]
