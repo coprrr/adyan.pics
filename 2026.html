@@ -3,32 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>photos</title>
+  <title>Canadian International AutoShow — 2026</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="../../style.css" />
 </head>
 <body>
   <main class="page wide">
-    <p class="back"><a href="index.html">← home</a></p>
+    <p class="back"><a href="../../photos.html">← photos</a></p>
 
-    <h1>photos/</h1>
+    <h1>photos/autoshow/2026/</h1>
+    <p class="muted">Canadian International AutoShow — 2026</p>
 
-    <section class="photo-section">
-      <div class="section-heading">
-        <h2>2026/</h2>
-      </div>
-
-      <div class="photo-grid" data-gallery="featured2026"></div>
-
-      <div class="collection-link">
-        <a href="photos/autoshow/2026.html">Canadian International AutoShow — 2026 →</a>
-      </div>
-    </section>
+    <div class="photo-grid" data-gallery="autoshow2026"></div>
 
     <footer>
-      <a href="index.html">← home</a>
+      <a href="../../photos.html">← photos</a>
     </footer>
   </main>
 
@@ -42,8 +33,15 @@
     <button class="lightbox-next" aria-label="Next photo">→</button>
   </div>
 
-  <script src="script.js"></script>
-  <script src="photos-data.js"></script>
-  <script src="gallery.js"></script>
+  <script src="../../photos-data.js"></script>
+  <script>
+    // Prefix root-relative image paths for this nested page.
+    for (const group of Object.values(window.PHOTO_DATA)) {
+      for (const photo of group) {
+        if (!photo.src.startsWith("../../")) photo.src = "../../" + photo.src;
+      }
+    }
+  </script>
+  <script src="../../gallery.js"></script>
 </body>
 </html>

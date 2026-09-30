@@ -1,53 +1,46 @@
-# adyan.pics
+# Personal site
 
-A deliberately simple personal website built with plain HTML, CSS, and a tiny bit of JavaScript.
+A deliberately simple personal website built with plain HTML, CSS, and JavaScript.
 
-## Files
+## Adding photos
 
-- `index.html` — homepage
-- `about.html` — about page
-- `photos.html` — photo archive
-- `projects.html` — projects page
-- `log.html` — personal/site timeline
-- `style.css` — shared styling
-- `script.js` — small site scripts
-- `images/` — put your photos here
+You no longer need to edit gallery HTML.
 
-## Run it locally
+### 1. Upload the photo
 
-Just open `index.html` in your browser.
+For example:
 
-For a nicer local development experience, use VS Code + the Live Server extension.
-
-## Add a real photo
-
-1. Put the image inside `images/`, for example `images/london-night.jpg`.
-2. In `photos.html`, replace a placeholder figure with:
-
-```html
-<figure>
-  <img src="images/london-night.jpg" alt="London at night">
-  <figcaption>london, ontario — september 2026</figcaption>
-</figure>
+```text
+images/2026/autoshow/05.jpg
 ```
 
-3. Add this to `style.css` if it isn't already there:
+### 2. Add one entry to `photos-data.js`
 
-```css
-.photo-grid img {
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
-  display: block;
+```js
+{
+  src: "images/2026/autoshow/05.jpg",
+  caption: "Canadian International AutoShow — 2026",
+  alt: "A red sports car at the auto show"
 }
 ```
 
-## GitHub Pages
+Put that entry inside the collection you want, such as `autoshow2026`.
 
-Once this is in a GitHub repository, you can enable GitHub Pages from:
+That's it. The site automatically creates:
+- the gallery tile
+- the caption
+- the clickable lightbox
+- left/right keyboard navigation
+- Esc-to-close
 
-Settings → Pages → Deploy from a branch → `main` / root
+## Main photos page
 
-Then connect `adyan.pics` as a custom domain.
+`featured2026` controls the small curated selection shown on `photos/`.
 
-Before changing DNS at Spaceship, follow GitHub's current custom-domain instructions so you use the exact records GitHub gives you.
+So if the AutoShow has 30 photos, you can put all 30 in `autoshow2026`, but only copy your best 2–3 entries into `featured2026`.
+
+## Photo quality
+
+The site displays the same image file in the grid and lightbox, so it does not intentionally reduce image quality.
+
+For now, upload high-quality JPEG/WebP files directly. If the archive gets large later, thumbnail generation can be automated without changing this photo-data workflow.
