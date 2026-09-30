@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grand Bend</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <main class="page wide">
+    <p class="back"><a href="../photos.html">← photos</a></p>
+    <h1>Grand Bend</h1>
+    <div class="photo-grid" data-gallery-collection="grand-bend-2026" data-path-prefix="../"></div>
+    <footer><a href="../photos.html">← photos</a></footer>
+  </main>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" aria-label="Close">×</button>
+    <button class="lightbox-prev" aria-label="Previous photo">←</button>
+    <figure class="lightbox-figure">
+      <img id="lightbox-image" alt="">
+      <figcaption id="lightbox-caption"></figcaption>
+    </figure>
+    <button class="lightbox-next" aria-label="Next photo">→</button>
+  </div>
+
+  <script src="../photos-data.js"></script>
+  <script src="../gallery.js"></script>
+</body>
+</html>

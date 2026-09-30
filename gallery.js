@@ -1,13 +1,47 @@
 (() => {
-  const gallery = document.querySelector("[data-gallery]");
-  const collectionName = gallery?.dataset.gallery;
-  const items = window.PHOTO_DATA?.[collectionName] || [];
+  const allCollections = window.PHOTO_COLLECTIONS || {};
 
-  if (gallery) {
+  function resolvePath(path, prefix = "") {
+    return prefix + path;
+  }
+
+  document.querySelectorAll("[data-collection-list]").forEach((container) => {
+    const mode = container.dataset.collectionList;
+    const prefix = container.dataset.pathPrefix || "";
+    let collections = Object.entries(allCollections);
+
+    if (mode !== "all") {
+      collections = collections.filter(([, collection]) => collection.category === mode);
+    }
+
+    container.innerHTML = collections.map(([id, collection]) => {
+      const previews = collection.preview.slice(0, 3).map((photo) => `
+        <a class="collection-preview-photo" href="${prefix}${collection.href}">
+          <img src="${resolvePath(photo.src, prefix)}" alt="${photo.alt || ""}" loading="lazy">
+          ${photo.caption ? `<span>${photo.caption}</span>` : ""}
+        </a>
+      `).join("");
+
+      return `
+        <section class="collection-block">
+          <h2><a href="${prefix}${collection.href}">${collection.title}</a></h2>
+          <div class="collection-preview-grid">${previews}</div>
+        </section>
+      `;
+    }).join("");
+  });
+
+  const gallery = document.querySelector("[data-gallery-collection]");
+  const collectionId = gallery?.dataset.galleryCollection;
+  const prefix = gallery?.dataset.pathPrefix || "";
+  const collection = allCollections[collectionId];
+  const items = collection?.images || [];
+
+  if (gallery && collection) {
     gallery.innerHTML = items.map((photo, index) => `
       <figure>
         <button class="photo-button" data-photo-index="${index}" aria-label="Open ${photo.alt || "photo"}">
-          <img src="${photo.src}" alt="${photo.alt || ""}" loading="lazy">
+          <img src="${resolvePath(photo.src, prefix)}" alt="${photo.alt || ""}" loading="lazy">
         </button>
         ${photo.caption ? `<figcaption>${photo.caption}</figcaption>` : ""}
       </figure>
@@ -27,11 +61,9 @@
     if (!lightbox || !items.length) return;
     currentPhoto = index;
     const photo = items[index];
-
-    lightboxImage.src = photo.src;
+    lightboxImage.src = resolvePath(photo.src, prefix);
     lightboxImage.alt = photo.alt || "";
     lightboxCaption.textContent = photo.caption || "";
-
     lightbox.classList.add("is-open");
     lightbox.setAttribute("aria-hidden", "false");
     document.body.style.overflow = "hidden";

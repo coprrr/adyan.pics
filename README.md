@@ -1,46 +1,45 @@
 # Personal site
 
-A deliberately simple personal website built with plain HTML, CSS, and JavaScript.
-
 ## Adding photos
 
-You no longer need to edit gallery HTML.
+The site is organized around **collections**.
 
-### 1. Upload the photo
+Examples:
+- Toronto AutoShow 2026
+- Grand Bend
+- Toronto AutoShow 2024
 
-For example:
+Actual image files go inside `images/`.
+
+Example:
 
 ```text
-images/2026/autoshow/05.jpg
+images/
+├── 2026/
+│   ├── autoshow/
+│   │   ├── 01.jpg
+│   │   ├── 02.jpg
+│   │   └── ...
+│   └── grand-bend/
+│       ├── 01.jpg
+│       └── ...
+└── 2024/
+    └── autoshow/
+        ├── 01.jpg
+        └── ...
 ```
 
-### 2. Add one entry to `photos-data.js`
+`photos-data.js` is the master list of collections and images.
 
-```js
-{
-  src: "images/2026/autoshow/05.jpg",
-  caption: "Canadian International AutoShow — 2026",
-  alt: "A red sports car at the auto show"
-}
-```
+Each collection has:
+- a title
+- category (`cars`, `places`, etc.)
+- year
+- 3 preview photos
+- all gallery photos
 
-Put that entry inside the collection you want, such as `autoshow2026`.
+The **photos/** landing page can show whichever collections you want to feature.
 
-That's it. The site automatically creates:
-- the gallery tile
-- the caption
-- the clickable lightbox
-- left/right keyboard navigation
-- Esc-to-close
+The **cars/** page automatically groups all collections whose category is `cars`, so a 2024 AutoShow and a 2026 AutoShow can live together there.
 
-## Main photos page
-
-`featured2026` controls the small curated selection shown on `photos/`.
-
-So if the AutoShow has 30 photos, you can put all 30 in `autoshow2026`, but only copy your best 2–3 entries into `featured2026`.
-
-## Photo quality
-
-The site displays the same image file in the grid and lightbox, so it does not intentionally reduce image quality.
-
-For now, upload high-quality JPEG/WebP files directly. If the archive gets large later, thumbnail generation can be automated without changing this photo-data workflow.
+Gallery pages use a 3-column grid on desktop and a lightbox when a photo is clicked.
