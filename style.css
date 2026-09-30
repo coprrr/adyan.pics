@@ -391,3 +391,86 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+.year-section {
+  margin-top: 58px;
+}
+
+.year-heading {
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--rule);
+  margin-bottom: 28px;
+}
+
+.collection-block {
+  margin-top: 38px;
+}
+
+.collection-block h2 {
+  margin-bottom: 14px;
+}
+
+.section-title-link {
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+  padding: 2px 5px;
+  margin-left: -5px;
+}
+
+.section-title-link:hover,
+.section-title-link:focus-visible {
+  background: var(--hover);
+  text-decoration: none;
+}
+
+.preview-photo-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.preview-photo-link:hover,
+.preview-photo-link:focus-visible {
+  background: transparent;
+}
+
+.preview-photo-link figure {
+  margin: 0;
+}
+
+.collection-preview-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.collection-preview-grid img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+  border: 1px solid var(--rule);
+}
+
+.collection-preview-grid figcaption {
+  margin-top: 7px;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.cars-section {
+  margin-top: 58px;
+}
+
+.cars-section > h2 {
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--rule);
+  margin-bottom: 20px;
+}
+
+@media (max-width: 700px) {
+  .collection-preview-grid {
+    grid-template-columns: 1fr;
+  }
+}

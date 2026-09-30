@@ -1,45 +1,54 @@
 # Personal site
 
-## Adding photos
+## Photo structure
 
-The site is organized around **collections**.
+`photos.html` is the main photo index and is organized by year.
 
-Examples:
-- Toronto AutoShow 2026
-- Grand Bend
-- Toronto AutoShow 2024
-
-Actual image files go inside `images/`.
-
-Example:
+Current layout:
 
 ```text
-images/
-├── 2026/
-│   ├── autoshow/
-│   │   ├── 01.jpg
-│   │   ├── 02.jpg
-│   │   └── ...
-│   └── grand-bend/
-│       ├── 01.jpg
-│       └── ...
-└── 2024/
-    └── autoshow/
-        ├── 01.jpg
-        └── ...
+photos/
+
+2026/
+  grand bend/
+  toronto autoshow v2/
+
+2024/
+  toronto autoshow v1/
 ```
 
-`photos-data.js` is the master list of collections and images.
+The AutoShow headings and preview photos link to `photos/cars.html`.
 
-Each collection has:
-- a title
-- category (`cars`, `places`, etc.)
-- year
-- 3 preview photos
-- all gallery photos
+`photos/cars.html` is one large car-photography page. It can hold sections such as:
 
-The **photos/** landing page can show whichever collections you want to feature.
+```text
+cars/
 
-The **cars/** page automatically groups all collections whose category is `cars`, so a 2024 AutoShow and a 2026 AutoShow can live together there.
+toronto autoshow/
+  many photos
 
-Gallery pages use a 3-column grid on desktop and a lightbox when a photo is clicked.
+cars n coffee london on/
+  many photos
+
+misc/
+  many photos
+```
+
+The car section headings are not links. The photos open in the lightbox.
+
+## Adding images
+
+Actual photo files live in `images/`.
+
+Examples:
+
+```text
+images/2026/autoshow/01.jpg
+images/2026/grand-bend/01.jpg
+images/2024/autoshow/01.jpg
+```
+
+Edit `photos-data.js` to change:
+- the three preview photos shown on the main photos page
+- captions
+- the full list of photos shown on the cars page
