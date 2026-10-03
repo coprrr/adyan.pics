@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>cars</title>
+  <title>places</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -12,21 +12,29 @@
 <body>
   <main class="page wide">
     <p class="back"><a href="../photos.html">← photos</a></p>
-    <h1>cars/</h1>
+    <h1>places/</h1>
 
-    <section class="cars-section" id="toronto-autoshow">
-      <h2>toronto autoshow/</h2>
-      <div class="photo-grid" data-gallery="cars.torontoAutoshow" data-path-prefix="../"></div>
+    <section class="country-section">
+      <h2 class="country-heading">canada/</h2>
+
+      <section class="place-section" id="tobermory">
+        <h3>tobermory/ <span class="muted">2024</span></h3>
+        <div class="photo-grid" data-gallery-secondary="places.canada.tobermory" data-path-prefix="../"></div>
+      </section>
+
+      <section class="place-section" id="grand-bend">
+        <h3>grand bend/ <span class="muted">2026</span></h3>
+        <div class="photo-grid" data-gallery-secondary="places.canada.grandBend" data-path-prefix="../"></div>
+      </section>
     </section>
 
-    <section class="cars-section" id="cars-and-coffee-london">
-      <h2>cars n coffee london on/</h2>
-      <div class="photo-grid" data-gallery-secondary="cars.carsAndCoffeeLondon" data-path-prefix="../"></div>
-    </section>
+    <section class="country-section">
+      <h2 class="country-heading">india/</h2>
 
-    <section class="cars-section">
-      <h2>misc/</h2>
-      <p class="muted">photos will go here.</p>
+      <section class="place-section" id="agra">
+        <h3>agra/ <span class="muted">2022</span></h3>
+        <div class="photo-grid" data-gallery-secondary="places.india.agra" data-path-prefix="../"></div>
+      </section>
     </section>
 
     <footer><a href="../photos.html">← photos</a></footer>

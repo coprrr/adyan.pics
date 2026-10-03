@@ -1,54 +1,42 @@
 # Personal site
 
-## Photo structure
+## Clean homepage URL
+Home links now point to `/`, so on the live custom domain you get `adyan.pics` instead of `adyan.pics/index.html`.
 
-`photos.html` is the main photo index and is organized by year.
-
-Current layout:
-
-```text
-photos/
-
+## Main photo index
 2026/
-  grand bend/
-  toronto autoshow v2/
+- grand bend canada/
+- toronto autoshow v2/
+
+2025/
+- vct/
 
 2024/
-  toronto autoshow v1/
-```
+- tobermory canada/
+- toronto autoshow v1/
 
-The AutoShow headings and preview photos link to `photos/cars.html`.
+2022/
+- agra india/
 
-`photos/cars.html` is one large car-photography page. It can hold sections such as:
+## Cars & Coffee without showing it on photos/
+Put the image at:
+`images/2026/cars-and-coffee-london/01.jpg`
 
-```text
-cars/
+Then add it only under:
+`cars.carsAndCoffeeLondon`
 
-toronto autoshow/
-  many photos
+in `photos-data.js`.
 
-cars n coffee london on/
-  many photos
+Do not make a preview collection for it. It will then appear on `cars/` but not on `photos/`.
 
-misc/
-  many photos
-```
+## Places compendium
+`photos/places.html` is one page:
 
-The car section headings are not links. The photos open in the lightbox.
+places/
+- canada/
+  - tobermory/ 2024
+  - grand bend/ 2026
+- india/
+  - agra/ 2022
 
-## Adding images
-
-Actual photo files live in `images/`.
-
-Examples:
-
-```text
-images/2026/autoshow/01.jpg
-images/2026/grand-bend/01.jpg
-images/2024/autoshow/01.jpg
-```
-
-Edit `photos-data.js` to change:
-- the three preview photos shown on the main photos page
-- captions
-- the full list of photos shown on the cars page
+There are no separate country pages.

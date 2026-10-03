@@ -474,3 +474,33 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+
+.photo-compendia {
+  margin: 24px 0 52px;
+}
+
+.country-section {
+  margin-top: 62px;
+}
+
+.country-heading {
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--rule);
+  margin-bottom: 30px;
+}
+
+.place-section {
+  margin-top: 42px;
+}
+
+.place-section h3 {
+  margin: 0 0 18px;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.place-section h3 .muted {
+  font-weight: 400;
+  margin-left: 8px;
+}
