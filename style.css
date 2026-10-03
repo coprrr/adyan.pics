@@ -506,3 +506,21 @@ footer {
 }
 
 .place-meta{margin:-8px 0 18px;color:var(--muted);font-size:.85rem}.photo-compendia{margin:24px 0 52px}.photo-compendia .section-title-link{padding-left:0;padding-right:0;margin-left:0}.place-section{margin-top:58px}
+
+
+.photo-placeholder {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--rule);
+  color: var(--muted);
+  background:
+    linear-gradient(to bottom right, transparent 49.7%, var(--rule) 50%, transparent 50.3%),
+    linear-gradient(to top right, transparent 49.7%, var(--rule) 50%, transparent 50.3%);
+  font-size: 0.8rem;
+}
+
+.collection-preview-grid .photo-placeholder {
+  aspect-ratio: 4 / 3;
+}
