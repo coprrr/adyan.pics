@@ -50,3 +50,22 @@ to:
 ```js
 { src: "/images/2026/example/01.jpg", caption: "your caption", alt: "..." }
 ```
+
+
+## v14 glossary pages
+
+The big category pages are ongoing compendia, not dated archives.
+
+`/photos/places` is grouped visually by country, then place. Dates remain on the main `/photos` timeline, but are omitted inside `cars/`, `places/`, and `events/`.
+
+If you revisit Tobermory, Grand Bend, Agra, the AutoShow, or another event later, add those photos to the same glossary subsection.
+
+
+## v15 fix
+
+Nested clean-route pages (`/about`, `/log`, `/projects`) now load the shared root stylesheet with `/style.css`.
+
+`projects/` was also cleaned so it only contains:
+- letterboxd
+- placeholder 2
+- placeholder 3
