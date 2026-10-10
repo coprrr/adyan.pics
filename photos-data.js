@@ -50,7 +50,7 @@ window.PHOTO_DATA = {
   },
 
   agra2022: {
-    title: "agra india/",
+    title: "agra/",
     link: "/photos/places#agra",
     preview: [
       { src: "", caption: "caption 1", alt: "Agra photo 1" },
