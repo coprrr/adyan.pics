@@ -83,10 +83,10 @@ window.PHOTO_DATA = {
       { "src":"/photos/cars/toronto%20autoshow/20.jpg","caption":"plymouth ’cuda","alt":"plymouth ’cuda","layout":{"row":9,"column":3,"columns":1,"rows":1} },
       { "src":"/photos/cars/toronto%20autoshow/21.jpg","caption":"lamborghini diablo gtr","alt":"lamborghini diablo gtr","layout":{"row":10,"column":1,"columns":1,"rows":1} },
       { "src":"/photos/cars/toronto%20autoshow/22.jpg","caption":"koenigsegg ccr, ferrari sf90, lamborghini diablo gtr & more","alt":"koenigsegg ccr, ferrari sf90, lamborghini diablo gtr & more","layout":{"row":10,"column":2,"columns":2,"rows":1} },
-      { "src":"/photos/cars/toronto%20autoshow/23.jpg","caption":"mercedes-benz 300 sl gullwing","alt":"mercedes-benz 300 sl gullwing","layout":{"row":11,"column":1,"columns":2,"rows":1} },
-      { "src":"/photos/cars/toronto%20autoshow/24.jpg","caption":"ferrari sf90 xx stradale","alt":"ferrari sf90 xx stradale","layout":{"row":11,"column":3,"columns":1,"rows":1} },
-      { "src":"/photos/cars/toronto%20autoshow/25.jpg","caption":"porsche 356 c coupé","alt":"porsche 356 c coupé","layout":{"row":12,"column":1,"columns":1,"rows":1} },
-      { "src":"/photos/cars/toronto%20autoshow/26.jpg","caption":"honda civic 3rd gen","alt":"honda civic 3rd gen","layout":{"row":12,"column":2,"columns":1,"rows":1} }
+      { "src":"/photos/cars/toronto%20autoshow/23.jpg","caption":"mercedes-benz 300 sl gullwing","alt":"mercedes-benz 300 sl gullwing","layout":{"row":11,"column":1,"columns":1,"rows":1} },
+      { "src":"/photos/cars/toronto%20autoshow/24.jpg","caption":"ferrari sf90 xx stradale","alt":"ferrari sf90 xx stradale","layout":{"row":11,"column":2,"columns":1,"rows":1} },
+      { "src":"/photos/cars/toronto%20autoshow/25.jpg","caption":"porsche 356 c coupé","alt":"porsche 356 c coupé","layout":{"row":11,"column":3,"columns":1,"rows":1} },
+      { "src":"/photos/cars/toronto%20autoshow/26.jpg","caption":"honda civic 3rd gen","alt":"honda civic 3rd gen","layout":{"row":12,"column":1,"columns":1,"rows":1} }
     ],
     misc: [
       { src: "/photos/cars/misc/01.jpg", caption: "hyundai genesis bk2", alt: "Hyundai Genesis BK2" },

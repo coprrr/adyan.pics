@@ -549,3 +549,30 @@ footer {
     grid-row: auto;
   }
 }
+
+/* Keep Autoshow single and double-width panels at the same image height. */
+.photo-grid[data-gallery-secondary="cars.torontoAutoshow"] {
+  container-type: inline-size;
+}
+
+@media (min-width: 701px) {
+  .photo-positioned > .photo-button {
+    height: calc((100cqw - 36px) / 4);
+  }
+
+  .photo-positioned > .photo-button > img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .photo-positioned.photo-tall {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .photo-positioned.photo-tall > .photo-button {
+    flex: 1;
+    height: 0;
+    min-height: 0;
+  }
+}

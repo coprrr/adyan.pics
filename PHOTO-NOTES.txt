@@ -59,8 +59,16 @@ AUTOSHOW GALLERY
 - 26 photos: photos/cars/toronto autoshow/01.jpg through 26.jpg.
 - V1 previews: images/2024/autoshow/01.jpg through 03.jpg.
 - V2 previews: images/2026/autoshow/01.jpg through 03.jpg.
-- Two-column panels: 05, 06, 12, 15, 19, 22, and 23.
+- Two-column panels: 05, 06, 12, 15, 19, and 22.
 - Photo 06 also spans two rows beside photos 07 and 08. Keep its 3:2 crop; 2400 x 1600 pixels is an optional export size.
-- Images keep their proportions and are not stretched or cropped by the full gallery. Row heights follow the images, so the diagram specifies positions rather than exact pixel heights.
+- On desktop, thumbnail heights align with regular 4:3 panels. Thumbnails use a centered crop where necessary; clicking opens the full image. On phones, images retain their natural proportions.
 - All panels stack in numerical order on phones. No photo 27 placeholder is added.
 - Existing misc images and captions are unchanged.
+
+ALIGNED AUTOSHOW PANELS
+- Photos 23, 24, and 25 form a normal three-panel row; photo 26 starts the next row.
+- Regular export recommendation: crop to 4:3, optionally export 2000 x 1500 px.
+- Double-width recommendation: crop to about 8:3, optionally export 2400 x 900 px.
+- The exact double-width ratio includes the column gap and changes slightly with screen width. CSS handles this; no exact export pixel size is required.
+- Photo 06 can keep a 3:2 crop (optional export 2400 x 1600 px). Its tall thumbnail fills two rows, with a centered crop; the full image stays available on click.
+- At maximum desktop width, regular thumbnails are 348 x 261 CSS pixels and double-width thumbnails are 714 x 261 CSS pixels.

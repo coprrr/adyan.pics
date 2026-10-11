@@ -53,7 +53,7 @@
     if (!photo.layout) return photo.wide ? ' class="photo-wide"' : "";
     const { row, column, columns, rows } = photo.layout;
     if (![row, column, columns, rows].every(value => Number.isInteger(value) && value > 0)) return "";
-    return ` class="photo-positioned" style="--photo-column: ${column}; --photo-columns: ${columns}; --photo-row: ${row}; --photo-rows: ${rows};"`;
+    return ` class="photo-positioned${rows > 1 ? ' photo-tall' : ''}" style="--photo-column: ${column}; --photo-columns: ${columns}; --photo-row: ${row}; --photo-rows: ${rows};"`;
   }
 
   function renderGallery(container, items) {
