@@ -49,11 +49,18 @@
   let activeItems = [];
   let currentPhoto = 0;
 
+  function galleryPlacement(photo) {
+    if (!photo.layout) return photo.wide ? ' class="photo-wide"' : "";
+    const { row, column, columns, rows } = photo.layout;
+    if (![row, column, columns, rows].every(value => Number.isInteger(value) && value > 0)) return "";
+    return ` class="photo-positioned" style="--photo-column: ${column}; --photo-columns: ${columns}; --photo-row: ${row}; --photo-rows: ${rows};"`;
+  }
+
   function renderGallery(container, items) {
     if (!container || !Array.isArray(items)) return;
 
     container.innerHTML = items.map((photo, index) => `
-      <figure${photo.wide ? ' class="photo-wide"' : ""}>
+      <figure${galleryPlacement(photo)}>
         ${
           photo.src
             ? `<button class="photo-button" data-photo-index="${index}" aria-label="Open ${photo.alt || "photo"}">

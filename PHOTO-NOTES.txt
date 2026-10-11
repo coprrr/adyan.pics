@@ -54,3 +54,13 @@ UPDATING PHOTOS
 LATEST GALLERY CHANGE
 The two-column feature uses photos-data.js, gallery.js, and style.css.
 Upload all three when applying that update. Upload images separately too.
+
+AUTOSHOW GALLERY
+- 26 photos: photos/cars/toronto autoshow/01.jpg through 26.jpg.
+- V1 previews: images/2024/autoshow/01.jpg through 03.jpg.
+- V2 previews: images/2026/autoshow/01.jpg through 03.jpg.
+- Two-column panels: 05, 06, 12, 15, 19, 22, and 23.
+- Photo 06 also spans two rows beside photos 07 and 08. Keep its 3:2 crop; 2400 x 1600 pixels is an optional export size.
+- Images keep their proportions and are not stretched or cropped by the full gallery. Row heights follow the images, so the diagram specifies positions rather than exact pixel heights.
+- All panels stack in numerical order on phones. No photo 27 placeholder is added.
+- Existing misc images and captions are unchanged.

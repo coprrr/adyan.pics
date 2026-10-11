@@ -535,3 +535,17 @@ footer {
     grid-column: span 1;
   }
 }
+
+/* Explicit Autoshow panel positions preserve the numbered reading order. */
+.photo-grid > .photo-positioned {
+  grid-column: var(--photo-column) / span var(--photo-columns);
+  grid-row: var(--photo-row) / span var(--photo-rows);
+  min-width: 0;
+}
+
+@media (max-width: 700px) {
+  .photo-grid > .photo-positioned {
+    grid-column: auto;
+    grid-row: auto;
+  }
+}
