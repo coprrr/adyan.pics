@@ -72,15 +72,14 @@ window.PHOTO_DATA = {
       { src: "", caption: "caption 9", alt: "Toronto AutoShow photo 9" }
     ],
     misc: [
-      { src: "", caption: "caption 1", alt: "Misc car photo 1" },
-      { src: "", caption: "caption 2", alt: "Misc car photo 2" },
-      { src: "", caption: "caption 3", alt: "Misc car photo 3" },
-      { src: "", caption: "caption 4", alt: "Misc car photo 4" },
-      { src: "", caption: "caption 5", alt: "Misc car photo 5" },
-      { src: "", caption: "caption 6", alt: "Misc car photo 6" },
-      { src: "", caption: "caption 7", alt: "Misc car photo 7" },
-      { src: "", caption: "caption 8", alt: "Misc car photo 8" },
-      { src: "", caption: "caption 9", alt: "Misc car photo 9" }
+      { src: "/photos/cars/misc/01.jpg", caption: "hyundai genesis bk2", alt: "Hyundai Genesis BK2" },
+      { src: "/photos/cars/misc/02.jpg", caption: "acura nsx", alt: "Acura NSX" },
+      { src: "/photos/cars/misc/03.jpg", caption: "pontiac gto", alt: "Pontiac GTO" },
+      { src: "/photos/cars/misc/04.jpg", caption: "argos (odyssey)", alt: "Argos (Odyssey)" },
+      { src: "/photos/cars/misc/05.jpg", caption: "dodge coronet '67", alt: "1967 Dodge Coronet" },
+      { src: "/photos/cars/misc/06.jpg", caption: "honda s2k & porsche 911 997", alt: "Honda S2000 and Porsche 911 (997)" },
+      { src: "/photos/cars/misc/07.jpg", caption: "honda prelude bb6", alt: "Honda Prelude BB6" },
+      { src: "/photos/cars/misc/08.jpg", caption: "nissan gtr r35", alt: "Nissan GT-R R35" }
     ]
   },
 
