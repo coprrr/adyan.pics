@@ -1,0 +1,56 @@
+ADYAN.PICS - PHOTO REFERENCE
+
+REGULAR PHOTOS
+- Crop ratio: 4:3 landscape.
+- Recommended export: 2000 x 1500 pixels.
+- Smaller originals: do not enlarge just to reach this size. Crop to 4:3 and keep the available resolution.
+- Crop first, then resize with proportions locked. Do not stretch images.
+
+PLACEHOLDER SIZE
+- Placeholders have a 4:3 ratio, not a fixed pixel size.
+- The gallery adapts to the screen width.
+- On a desktop with the gallery at its maximum width, each regular slot is 348 x 261 CSS pixels.
+- The desktop layout has three columns, with 18 pixels between columns.
+- At screen widths of 700 pixels or less, the gallery switches to one column.
+- Exported image pixels do not need to match the slot pixels. Larger exports help keep photos sharp on high-resolution screens and in the enlarged viewer.
+- Gallery images currently keep their own proportions. Export at 4:3 for consistent regular photo heights.
+
+WIDE PHOTO - CURRENTLY MISC PHOTO 7
+- Spans two columns on desktop, one column on phones.
+- Optional crop ratio: 8:3 landscape.
+- Recommended export for that crop: 2400 x 900 pixels.
+- At maximum desktop gallery width, the wide slot is 714 CSS pixels wide (two 348-pixel columns plus an 18-pixel gap).
+- An 8:3 image at that width is about 268 CSS pixels tall. The gap means it is slightly taller than a regular 261-pixel slot.
+- The website preserves image proportions; the wide photo does not have to be cropped to 8:3.
+
+FILES AND PATHS
+- Current format: JPG. Keep the actual .jpg extension.
+- Local folder relative to the site root: photos/cars/misc/
+- Current filenames: 01.jpg through 08.jpg.
+- Example website path: /photos/cars/misc/01.jpg
+- Filenames and capitalization must match photos-data.js exactly.
+- Keep original full-resolution photos separately; use exported copies on the site.
+
+CURRENT MISC ORDER AND CAPTIONS
+01.jpg - hyundai genesis bk2
+02.jpg - acura nsx
+03.jpg - pontiac gto
+04.jpg - argos (odyssey)
+05.jpg - dodge coronet '67
+06.jpg - honda prelude bb6
+07.jpg - honda s2k & porsche 911 997 [wide]
+08.jpg - nissan gtr r35
+There are eight entries; the ninth placeholder has been removed.
+
+UPDATING PHOTOS
+- Edit/export a replacement with the same filename and extension.
+- Replace it in the same folder in GitHub, then commit and push if working locally.
+- Captions and descriptive alt text are stored in photos-data.js.
+- No data-file change is needed when only replacing an image at the same path.
+- To add/remove photos or change captions, edit the cars.misc array in photos-data.js.
+- The wide entry has wide: true. Other entries are regular width.
+- Wait for GitHub Pages deployment to finish, then hard-refresh with Ctrl + Shift + R.
+
+LATEST GALLERY CHANGE
+The two-column feature uses photos-data.js, gallery.js, and style.css.
+Upload all three when applying that update. Upload images separately too.
