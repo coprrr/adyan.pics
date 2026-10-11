@@ -523,3 +523,15 @@ footer {
 .collection-preview-grid .photo-placeholder {
   aspect-ratio: 4 / 3;
 }
+
+/* Featured gallery photos span two columns on larger screens. */
+.photo-grid > .photo-wide {
+  grid-column: span 2;
+  min-width: 0;
+}
+
+@media (max-width: 700px) {
+  .photo-grid > .photo-wide {
+    grid-column: span 1;
+  }
+}

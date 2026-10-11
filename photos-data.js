@@ -77,8 +77,8 @@ window.PHOTO_DATA = {
       { src: "/photos/cars/misc/03.jpg", caption: "pontiac gto", alt: "Pontiac GTO" },
       { src: "/photos/cars/misc/04.jpg", caption: "argos (odyssey)", alt: "Argos (Odyssey)" },
       { src: "/photos/cars/misc/05.jpg", caption: "dodge coronet '67", alt: "1967 Dodge Coronet" },
-      { src: "/photos/cars/misc/06.jpg", caption: "honda s2k & porsche 911 997", alt: "Honda S2000 and Porsche 911 (997)" },
-      { src: "/photos/cars/misc/07.jpg", caption: "honda prelude bb6", alt: "Honda Prelude BB6" },
+      { src: "/photos/cars/misc/06.jpg", caption: "honda prelude bb6", alt: "Honda Prelude BB6" },
+      { src: "/photos/cars/misc/07.jpg", caption: "honda s2k & porsche 911 997", alt: "Honda S2000 and Porsche 911 (997)", wide: true },
       { src: "/photos/cars/misc/08.jpg", caption: "nissan gtr r35", alt: "Nissan GT-R R35" }
     ]
   },

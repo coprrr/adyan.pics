@@ -53,7 +53,7 @@
     if (!container || !Array.isArray(items)) return;
 
     container.innerHTML = items.map((photo, index) => `
-      <figure>
+      <figure${photo.wide ? ' class="photo-wide"' : ""}>
         ${
           photo.src
             ? `<button class="photo-button" data-photo-index="${index}" aria-label="Open ${photo.alt || "photo"}">
